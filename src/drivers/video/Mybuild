@@ -56,6 +56,12 @@ module generic {
 	depends embox.driver.pci
 }
 
+module pl110 {
+	source "pl110.c"
+
+	depends fb
+}
+
 module fb_videomodes {
 	source "fb_videomodes.c"
 
