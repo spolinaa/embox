@@ -10,12 +10,8 @@
 #include <asm/regs.h>
 #include <framework/mod/options.h>
 
-#define IRQ_STACK_SIZE OPTION_GET(NUMBER,irq_stack_size)
 
-.extern irq_handler
-.extern setup_excpt_table
-
-	.pushsection ._secure.text, "ax"
+	.pushsection .monitor_trap_table, "ax"
 
 	.align	5
 /* the vector table for secure state and HYP mode */
