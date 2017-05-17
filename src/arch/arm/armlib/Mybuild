@@ -22,6 +22,7 @@ module locore extends embox.arch.locore {
 
 	depends head
 	depends setup_exception_table
+	depends armv7_monitor_mode
 }
 
 module interrupt extends embox.arch.interrupt {
