@@ -16,7 +16,6 @@
 /.tmp
 /GNUmakefile
 /build
-/conf
 /core
 /dist
 /download
